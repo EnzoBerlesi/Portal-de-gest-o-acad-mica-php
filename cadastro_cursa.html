@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro em Curso</title>
+
+    <style>
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        select {
+            width: calc(100% - 10px);
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="number"] {
+            width: calc(100% - 10px);
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px
+            0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"], input[type="date"] {
+            width: calc(100% - 10px);
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        select {
+            width: calc(100% - 10px);
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro em Curso</h1>
+    <form action="processa_cursa.php" method="post">
+        <label for="fk_aluno_codigo">Codigo do Aluno:</label>
+        <input type="text" id="fk_aluno_codigo" name="fk_aluno_codigo"><br><br>
+        <label for="fk_disciplina_codigo">Codigo da Disciplina:</label>
+        <input type="text" id="fk_disciplina_codigo" name="fk_disciplina_codigo"><br><br>
+        <label for="turma">Turma:</label>
+        <input type="text" id="turma" name="turma"><br><br>
+        <label for="ano">Ano:</label>
+        <input type="text" id="ano" name="ano"><br><br>
+        <label for="nota1">Nota 1:</label>
+        <input type="text" id="nota1" name="nota1"><br><br>
+        <label for="nota2">Nota 2:</label>
+        <input type="text" id="nota2" name="nota2"><br><br>
+        <label for="faltas">Faltas:</label>
+        <input type="text" id="faltas" name="faltas"><br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
